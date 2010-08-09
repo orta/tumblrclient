@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- 
+      * These are the settings that are distributed with MMICrashReporter.
+      *
+      * They will only take effect if no other configuration can be found.
+      -->
+
+    <key>applicationName</key>
+    <string>MMICrashReporter</string>
+
+    <key>deliveryAddress</key>
+    <string>mailto:mmicrashreporterreports@mildmanneredindustries.com</string>
+
+    <!-- We use the default settings for each mode -->
+
+</dict>
+</plist>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--    
+  88                         
+  ,d                                      88           88              
+  88                                      88           88              
+  MM88MMM88       88  88,dPYba,,adPYba,   88,dPPYba,   88  8b,dPPYba,  
+  88     88       88  88P'   "88"    "8a  88P'    "8a  88  88P'   "Y8  
+  88     88       88  88      88      88  88       d8  88  88          
+  88,    "8a,   ,a88  88      88      88  88b,   ,a8"  88  88          
+  "Y888   `"YbbdP'Y8  88      88      88  8Y"Ybbd8"'   88  88
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body id="dashboard_index">
+  <div id="container">            
+    <div id="header"></div>
+
+    <div id="content_container">
+      <div id = "background_top" style="background: url('images/content_top.png') no-repeat top center;">
+        <img src = "images/content_top.png"></img>
+        <div style="">
+          <div id="content">
+
+            <div id="dashboard_header">
+
+              <div id="dashboard_controls"></div>
+
+              <div style="width:400px; overflow:hidden; height:30px;">
+                <span class="light">Making the complex </span>possible <span class="light">and the simple</span> easy </div>
+              </div>
+
+              <!-- Posts -->
+              <ol id="posts" >
+                
+                <li id="post" class="post regular not_mine ">
+                  <div style="padding:1px;">
+                    <div class="post_container">
+                      <div class="post_info">                          
+                        <span class="username"><a href="/blog">orta</a>:</span>
+                      </div>
+                      <div style="font-size:135%; line-height:125%; font-family:helvetica, arial; font-weight:bold;margin-bottom:10px;">AppleScript support: </div>
+                      Tumblg supports AppleScript, this means you can do something like<br/><br/>
+                      <p>
+                      <code style = " -webkit-user-select: auto;">
+                      tell application "Tumblg"<br/>
+                      &nbsp;&nbsp;post "hello world" as type "text"<br/>
+                      end tell<br/>
+                      </code><p/>
+                      and Tumblg will happliy go along and post your text using your settings. With this you could do anything, for example, the following script posts the current MP3 from iTunes and uses quicksilver to provide a comment.<br/><br/>
+                       <p>
+                       <code style = " -webkit-user-select: auto;">
+tell application "iTunes"<br/>
+&nbsp;&nbsp;if player state is playing then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;set theTrack to current track<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;set songLocation to location of theTrack as string<br/>
+&nbsp;&nbsp;end if<br/>
+end tell<br/>
+tell application "Tumblor"<br/>
+&nbsp;&nbsp;post file songLocation with description "awesome"<br/>
+end tell<br/>                        </code><br/>
+                      
+                    </div>
+                  </div>
+
+                    <div style="background:url('images/default_avatar_40.gif') no-repeat;" class="avatar"><img alt="" src="images/avatar_border_40px.png"/></div>
+                    <div class="arrow"><img src="images/arrow_mask.png?2" alt=""/></div>
+                </li>
+                <li id="post" class="post regular not_mine ">
+                  <div style="padding:1px;">
+                    <div class="post_container">
+                      <div class="post_info">                          
+                        <span class="username"><a href="/blog">orta</a>:</span>
+                      </div>
+                      <div style="font-size:135%; line-height:125%; font-family:helvetica, arial; font-weight:bold;margin-bottom:10px;">Feed Reader support: </div>
+                      Tumblg supports importing from your favourite feed reader. This means you an simply hit the Post To Weblog button and Tumblg will grab the selected text and url and import it. You can choose which type of post you want to make by default in the preferences <br/><br/>
+                    </div>
+                  </div>
+
+                    <div style="background:url('images/default_avatar_40.gif') no-repeat;" class="avatar"><img alt="" src="images/avatar_border_40px.png"/></div>
+                    <div class="arrow"><img src="images/arrow_mask.png?2" alt=""/></div>
+                </li>
+                <li id="post" class="post regular not_mine ">
+                  <div style="padding:1px;">
+                    <div class="post_container">
+                      <div class="post_info">                          
+                        <span class="username"><a href="/blog">orta</a>:</span>
+                      </div>
+                      <div style="font-size:135%; line-height:125%; font-family:helvetica, arial; font-weight:bold;margin-bottom:10px;">tumbl:// URL support: </div>
+                        This URL support means that you can easily import content from Safari or Firefox, here is an example link you can drag onto your toolbar to have your content imported. <br/><br/>
+                        <center><div style="-webkit-user-select: auto; width:65px;text-align:center;line-height:15px;" class = "blue_button"><a href="">Tumble It</a></div></center><br/>
+                        Tumblg will currently look for these variables in URL encoding: <i>url, description, title, type</i>.<br/><br/>
+                      </div>
+                    </div>
+                    <div style="background:url('images/default_avatar_40.gif') no-repeat;" class="avatar"><img alt="" src="images/avatar_border_40px.png"/></div>
+                    <div class="arrow"><img src="images/arrow_mask.png?2" alt=""/></div>
+                  </div>
+                </li>
+
+              </ol>
+              <img src = "images/content_bottom.png"></img>
+              <div id="pagination">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer"></div>
+
+      </div>
+      <div class = "extra"><br/><strong>&copy; Tumblr is totally owned by Tumblr, Inc. And has nothing to do with this app.</strong><br/>
+      </div>
+      
+    </body>
+  </html>

@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelReport = id; sendReport = id; }; 
+            CLASS = MMIReport; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_busyIndicator" = NSProgressIndicator; 
+                "_contentBox" = NSBox; 
+                "_statusText" = NSTextField; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

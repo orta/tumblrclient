@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<dictionary title="Tumblette Terminology">
+
+  <suite name="Tumblette Suite" code="????" description="Tumblette Specific script stuff.">
+
+    <command name="post" code="tumbpost" description="make text based post.">      
+      <direct-parameter description="the post text">
+        <type type="text"/>
+      </direct-parameter>
+      <parameter name="as type" code="ptyp" type="text" description="The post type (text/quote/chat/link/)">
+      </parameter>
+    </command>
+    
+    <command name="post file" code="tumbposi" description="post and image, audio or video.">      
+      <direct-parameter description="the file path">
+        <type type="file"/>
+      </direct-parameter>
+      <parameter name="with description" code="pidc" type="text" description="The post description">
+      </parameter>
+    </command>      
+    
+    <command name="send" code="tumbsend" description="send input."></command>      
+
+	</suite>
+	
+</dictionary>

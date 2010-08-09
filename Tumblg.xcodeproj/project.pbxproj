@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		60031D0E0E89B1AA004D3514 /* Growl-WithInstaller.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 60A57D2B0E87E10800EE1DFB /* Growl-WithInstaller.framework */; };
+		6019D4850E8C7403001CC94E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6019D4840E8C7403001CC94E /* Sparkle.framework */; };
+		6019D4EA0E8C743E001CC94E /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6019D4840E8C7403001CC94E /* Sparkle.framework */; };
+		6024E6690E5740DF006276FF /* NSURL_UrlFromFSRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024E6680E5740DF006276FF /* NSURL_UrlFromFSRef.m */; };
+		6024E6CE0E57468C006276FF /* tumb_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024E6CD0E57468C006276FF /* tumb_main.m */; };
+		6024E71F0E575EF9006276FF /* tumb in Resources */ = {isa = PBXBuildFile; fileRef = 6024E6C80E574527006276FF /* tumb */; };
+		6024E77D0E576505006276FF /* TumblrController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C85F3D0E323D88002C80A5 /* TumblrController.m */; };
+		6024E77E0E576575006276FF /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60381F4E0E394B1C005A22AB /* EMKeychainProxy.m */; };
+		6024E77F0E576581006276FF /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60381F4C0E394B1C005A22AB /* EMKeychainItem.m */; };
+		6024E7800E57658B006276FF /* ConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C85F260E323C06002C80A5 /* ConnectionController.m */; };
+		6024E7810E576593006276FF /* NSString_URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6079ECCD0E3821A80053AF22 /* NSString_URLEncoding.m */; };
+		6024E7820E576597006276FF /* ORHTTPWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 609AD6B00E4E08200072A4F5 /* ORHTTPWrapper.m */; };
+		6024E7830E57659C006276FF /* PostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCA0620E3405AE0026B85B /* PostController.m */; };
+		6024E7CA0E57664A006276FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		6024E7CB0E57664A006276FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60377A450E3256EB00D5FF3D /* Security.framework */; };
+		6024E8450E579A6B006276FF /* editor-javascript.js in Resources */ = {isa = PBXBuildFile; fileRef = 6024E8200E57992E006276FF /* editor-javascript.js */; };
+		6024E8540E579BE3006276FF /* photoplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6024E8530E579BE3006276FF /* photoplaceholder.png */; };
+		60377A460E3256EB00D5FF3D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60377A450E3256EB00D5FF3D /* Security.framework */; };
+		60377AD00E3261C700D5FF3D /* todo in Resources */ = {isa = PBXBuildFile; fileRef = 60377ACF0E3261C700D5FF3D /* todo */; };
+		60381F3F0E394822005A22AB /* images in Resources */ = {isa = PBXBuildFile; fileRef = 60381F360E394822005A22AB /* images */; };
+		60381F400E394822005A22AB /* welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = 60381F3E0E394822005A22AB /* welcome.html */; };
+		60381F4F0E394B1C005A22AB /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60381F4C0E394B1C005A22AB /* EMKeychainItem.m */; };
+		60381F500E394B1C005A22AB /* EMKeychainProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60381F4E0E394B1C005A22AB /* EMKeychainProxy.m */; };
+		60381FCE0E395631005A22AB /* Tumblor.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 60381FCD0E395631005A22AB /* Tumblor.sdef */; };
+		603F26C70E37F91E008305CD /* chat.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 603F26C00E37F91E008305CD /* chat.pdf */; };
+		603F26C80E37F91E008305CD /* link.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 603F26C10E37F91E008305CD /* link.pdf */; };
+		603F26C90E37F91E008305CD /* photo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 603F26C20E37F91E008305CD /* photo.pdf */; };
+		603F26CA0E37F91E008305CD /* quotes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 603F26C30E37F91E008305CD /* quotes.pdf */; };
+		603F26CB0E37F91E008305CD /* sound.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 603F26C40E37F91E008305CD /* sound.pdf */; };
+		603F26CC0E37F91E008305CD /* text.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 603F26C50E37F91E008305CD /* text.pdf */; };
+		603F26CD0E37F91E008305CD /* video.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 603F26C60E37F91E008305CD /* video.pdf */; };
+		6040CB990E92EEE3008E1B28 /* signedup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6040CB980E92EEE3008E1B28 /* signedup.html */; };
+		6040CBFA0E92F968008E1B28 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6040CBF90E92F968008E1B28 /* BGHUDAppKit.framework */; };
+		6040CC1A0E92FAB1008E1B28 /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6040CBF90E92F968008E1B28 /* BGHUDAppKit.framework */; };
+		6048EA4F0E4600E2009326C6 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6048EA4E0E4600E2009326C6 /* style.css */; };
+		6079ECCE0E3821A80053AF22 /* NSString_URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6079ECCD0E3821A80053AF22 /* NSString_URLEncoding.m */; };
+		608C80EF0E8536B400E15695 /* BlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 608C80EE0E8536B400E15695 /* BlogController.m */; };
+		609439590E45492500107807 /* ORGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 609439580E45492500107807 /* ORGradientView.m */; };
+		609AD6B10E4E08200072A4F5 /* ORHTTPWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 609AD6B00E4E08200072A4F5 /* ORHTTPWrapper.m */; };
+		60A577590E85CFBF00EE1DFB /* MMICrashReporterBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A577580E85CFBF00EE1DFB /* MMICrashReporterBridge.m */; };
+		60A577660E85D12C00EE1DFB /* MMICrashReporter.app in Resources */ = {isa = PBXBuildFile; fileRef = 60A577650E85D12C00EE1DFB /* MMICrashReporter.app */; };
+		60A577C90E85D5B900EE1DFB /* MMICrashReporter.crashreporterconfig in Resources */ = {isa = PBXBuildFile; fileRef = 60A577C80E85D5B900EE1DFB /* MMICrashReporter.crashreporterconfig */; };
+		60A579250E86AA1D00EE1DFB /* quote.html in Resources */ = {isa = PBXBuildFile; fileRef = 60A579240E86AA1D00EE1DFB /* quote.html */; };
+		60A57A0A0E86FE1900EE1DFB /* ImageImagekitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A57A090E86FE1900EE1DFB /* ImageImagekitView.m */; };
+		60A57AB60E87104900EE1DFB /* GrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A57AB50E87104900EE1DFB /* GrowlController.m */; };
+		60A57B3D0E871DF100EE1DFB /* AboutWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A57B3C0E871DF100EE1DFB /* AboutWindow.m */; };
+		60A57D2C0E87E10800EE1DFB /* Growl-WithInstaller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A57D2B0E87E10800EE1DFB /* Growl-WithInstaller.framework */; };
+		60AF402B0E4F88C100E8CA9E /* TumblrQSHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AF402A0E4F88C100E8CA9E /* TumblrQSHandler.m */; };
+		60AF45560E4FD2CC00E8CA9E /* AudioImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AF45550E4FD2CC00E8CA9E /* AudioImageView.m */; };
+		60AF46000E4FE78200E8CA9E /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60AF45FF0E4FE78200E8CA9E /* About.xib */; };
+		60AF461E0E4FECA200E8CA9E /* tumbletteabout.qtz in Resources */ = {isa = PBXBuildFile; fileRef = 60AF461D0E4FECA200E8CA9E /* tumbletteabout.qtz */; };
+		60AF46230E4FED4500E8CA9E /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AF46220E4FED4500E8CA9E /* AboutWindowController.m */; };
+		60B6FC060E4ED919003C0DA5 /* editor-index.html in Resources */ = {isa = PBXBuildFile; fileRef = 60B6FC020E4ED919003C0DA5 /* editor-index.html */; };
+		60B6FC070E4ED919003C0DA5 /* editor-style.css in Resources */ = {isa = PBXBuildFile; fileRef = 60B6FC030E4ED919003C0DA5 /* editor-style.css */; };
+		60B6FC1E0E4F433A003C0DA5 /* behaviour.js in Resources */ = {isa = PBXBuildFile; fileRef = 60B6FC010E4ED919003C0DA5 /* behaviour.js */; };
+		60BA22C20E4633180097B2CA /* advanced.html in Resources */ = {isa = PBXBuildFile; fileRef = 60BA22C10E4633180097B2CA /* advanced.html */; };
+		60BA29980E46A4F10097B2CA /* NSImage+QuickLook.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BA29970E46A4F10097B2CA /* NSImage+QuickLook.m */; };
+		60C85F270E323C06002C80A5 /* ConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C85F260E323C06002C80A5 /* ConnectionController.m */; };
+		60C85F3E0E323D88002C80A5 /* TumblrController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C85F3D0E323D88002C80A5 /* TumblrController.m */; };
+		60CD5C890E529538003AE410 /* VideoQTMovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD5C880E529538003AE410 /* VideoQTMovieView.m */; };
+		60D31EE70E32972400C369A3 /* LinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D31EE60E32972400C369A3 /* LinkController.m */; };
+		60D31FC90E32A89100C369A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D31FC80E32A89100C369A3 /* QuartzCore.framework */; };
+		60D31FDD0E32A9E400C369A3 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D31FDC0E32A9E400C369A3 /* QuickLook.framework */; };
+		60D31FE10E32A9F500C369A3 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D31FE00E32A9F500C369A3 /* Quartz.framework */; };
+		60D320570E32BC1300C369A3 /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D320560E32BC1300C369A3 /* ImageController.m */; };
+		60D3205B0E32BFB000C369A3 /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D3205A0E32BFB000C369A3 /* ApplicationController.m */; };
+		60D320CE0E32CC2400C369A3 /* QuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D320CD0E32CC2400C369A3 /* QuoteController.m */; };
+		60D320E40E32CD6300C369A3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D320E30E32CD6300C369A3 /* WebKit.framework */; };
+		60DCA0630E3405AE0026B85B /* PostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCA0620E3405AE0026B85B /* PostController.m */; };
+		60E237970E33CFB300917E3A /* ORBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E237960E33CFB300917E3A /* ORBackgroundView.m */; };
+		60E237B20E33D28500917E3A /* ORTiledBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E237B10E33D28500917E3A /* ORTiledBackgroundView.m */; };
+		60E237D80E33D57900917E3A /* TextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E237D70E33D57900917E3A /* TextController.m */; };
+		60E237F20E33D5BC00917E3A /* ConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E237F10E33D5BC00917E3A /* ConversationController.m */; };
+		60E237F50E33D5CA00917E3A /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E237F40E33D5CA00917E3A /* AudioController.m */; };
+		60E238000E33D94F00917E3A /* WelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E237FF0E33D94F00917E3A /* WelcomeController.m */; };
+		60E2389B0E33EC3900917E3A /* AppKitScripting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E2389A0E33EC3900917E3A /* AppKitScripting.framework */; };
+		60E238A50E33EC6B00917E3A /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E238A40E33EC6B00917E3A /* AppleScriptKit.framework */; };
+		60EF92BB0E33B03D00E37059 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EF92BA0E33B03C00E37059 /* QTKit.framework */; };
+		60EF92BE0E33B04E00E37059 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EF92BD0E33B04E00E37059 /* QuickTime.framework */; };
+		60EF93180E33C66C00E37059 /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EF93170E33C66C00E37059 /* VideoController.m */; };
+		60FAAD740E3B9C4B00ED4D1C /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAAD730E3B9C4B00ED4D1C /* PreferencesController.m */; };
+		60FF092D0E7E051B0029036F /* TumblrBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FF092C0E7E051B0029036F /* TumblrBGView.m */; };
+		60FF096F0E7E1A570029036F /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FF096E0E7E1A570029036F /* camera_icon.png */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B519EB740F6D12FB00FB1730 /* iMediaBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B519EB730F6D12FB00FB1730 /* iMediaBrowser.framework */; };
+		B519EBA70F6D130B00FB1730 /* iMediaBrowser.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B519EB730F6D12FB00FB1730 /* iMediaBrowser.framework */; };
+		B519ECBB0F6D4FB400FB1730 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B519ECBA0F6D4FB400FB1730 /* Icon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		6001C1DB0E6096FF0093A578 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = "com.apple.build-tasks.copy-plist-file";
+			filePatterns = javascript;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60031D070E89B19C004D3514 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B519EBA70F6D130B00FB1730 /* iMediaBrowser.framework in CopyFiles */,
+				6040CC1A0E92FAB1008E1B28 /* BGHUDAppKit.framework in CopyFiles */,
+				6019D4EA0E8C743E001CC94E /* Sparkle.framework in CopyFiles */,
+				60031D0E0E89B1AA004D3514 /* Growl-WithInstaller.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Tumblor_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tumblor_Prefix.pch; sourceTree = "<group>"; };
+		6019D4840E8C7403001CC94E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		6024E6670E5740DF006276FF /* NSURL_UrlFromFSRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURL_UrlFromFSRef.h; sourceTree = "<group>"; };
+		6024E6680E5740DF006276FF /* NSURL_UrlFromFSRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURL_UrlFromFSRef.m; sourceTree = "<group>"; };
+		6024E6C80E574527006276FF /* tumb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tumb; sourceTree = BUILT_PRODUCTS_DIR; };
+		6024E6CD0E57468C006276FF /* tumb_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tumb_main.m; sourceTree = "<group>"; };
+		6024E8200E57992E006276FF /* editor-javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "editor-javascript.js"; sourceTree = "<group>"; };
+		6024E8530E579BE3006276FF /* photoplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoplaceholder.png; sourceTree = "<group>"; };
+		60377A450E3256EB00D5FF3D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		60377ACF0E3261C700D5FF3D /* todo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo; sourceTree = "<group>"; };
+		60381F360E394822005A22AB /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		60381F3E0E394822005A22AB /* welcome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = welcome.html; sourceTree = "<group>"; };
+		60381F4B0E394B1C005A22AB /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
+		60381F4C0E394B1C005A22AB /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
+		60381F4D0E394B1C005A22AB /* EMKeychainProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainProxy.h; sourceTree = "<group>"; };
+		60381F4E0E394B1C005A22AB /* EMKeychainProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainProxy.m; sourceTree = "<group>"; };
+		60381FCD0E395631005A22AB /* Tumblor.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = Tumblor.sdef; sourceTree = "<group>"; };
+		603F26C00E37F91E008305CD /* chat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = chat.pdf; sourceTree = "<group>"; };
+		603F26C10E37F91E008305CD /* link.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = link.pdf; sourceTree = "<group>"; };
+		603F26C20E37F91E008305CD /* photo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = photo.pdf; sourceTree = "<group>"; };
+		603F26C30E37F91E008305CD /* quotes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = quotes.pdf; sourceTree = "<group>"; };
+		603F26C40E37F91E008305CD /* sound.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sound.pdf; sourceTree = "<group>"; };
+		603F26C50E37F91E008305CD /* text.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = text.pdf; sourceTree = "<group>"; };
+		603F26C60E37F91E008305CD /* video.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = video.pdf; sourceTree = "<group>"; };
+		603F27210E37FF57008305CD /* viewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewControllerProtocol.h; sourceTree = "<group>"; };
+		6040CB980E92EEE3008E1B28 /* signedup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = signedup.html; sourceTree = "<group>"; };
+		6040CBF90E92F968008E1B28 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
+		6048EA4E0E4600E2009326C6 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		6048EAD20E4610DB009326C6 /* ORViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORViews.h; sourceTree = "<group>"; };
+		6079ECCC0E3821A80053AF22 /* NSString_URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_URLEncoding.h; sourceTree = "<group>"; };
+		6079ECCD0E3821A80053AF22 /* NSString_URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_URLEncoding.m; sourceTree = "<group>"; };
+		608C80ED0E8536B400E15695 /* BlogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogController.h; sourceTree = "<group>"; };
+		608C80EE0E8536B400E15695 /* BlogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogController.m; sourceTree = "<group>"; };
+		609439580E45492500107807 /* ORGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGradientView.m; sourceTree = "<group>"; };
+		609AD6AF0E4E08200072A4F5 /* ORHTTPWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORHTTPWrapper.h; sourceTree = "<group>"; };
+		609AD6B00E4E08200072A4F5 /* ORHTTPWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORHTTPWrapper.m; sourceTree = "<group>"; };
+		60A577570E85CFBF00EE1DFB /* MMICrashReporterBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMICrashReporterBridge.h; sourceTree = "<group>"; };
+		60A577580E85CFBF00EE1DFB /* MMICrashReporterBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMICrashReporterBridge.m; sourceTree = "<group>"; };
+		60A577650E85D12C00EE1DFB /* MMICrashReporter.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = MMICrashReporter.app; sourceTree = "<group>"; };
+		60A577C80E85D5B900EE1DFB /* MMICrashReporter.crashreporterconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MMICrashReporter.crashreporterconfig; sourceTree = "<group>"; };
+		60A579240E86AA1D00EE1DFB /* quote.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = quote.html; sourceTree = "<group>"; };
+		60A57A080E86FE1900EE1DFB /* ImageImagekitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageImagekitView.h; sourceTree = "<group>"; };
+		60A57A090E86FE1900EE1DFB /* ImageImagekitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageImagekitView.m; sourceTree = "<group>"; };
+		60A57AB40E87104900EE1DFB /* GrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlController.h; sourceTree = "<group>"; };
+		60A57AB50E87104900EE1DFB /* GrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlController.m; sourceTree = "<group>"; };
+		60A57B3B0E871DF100EE1DFB /* AboutWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindow.h; sourceTree = "<group>"; };
+		60A57B3C0E871DF100EE1DFB /* AboutWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindow.m; sourceTree = "<group>"; };
+		60A57D2B0E87E10800EE1DFB /* Growl-WithInstaller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Growl-WithInstaller.framework"; sourceTree = "<group>"; };
+		60AF40290E4F88C100E8CA9E /* TumblrQSHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrQSHandler.h; sourceTree = "<group>"; };
+		60AF402A0E4F88C100E8CA9E /* TumblrQSHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrQSHandler.m; sourceTree = "<group>"; };
+		60AF45540E4FD2CC00E8CA9E /* AudioImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioImageView.h; sourceTree = "<group>"; };
+		60AF45550E4FD2CC00E8CA9E /* AudioImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioImageView.m; sourceTree = "<group>"; };
+		60AF45FF0E4FE78200E8CA9E /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		60AF461D0E4FECA200E8CA9E /* tumbletteabout.qtz */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = tumbletteabout.qtz; sourceTree = "<group>"; };
+		60AF46210E4FED4500E8CA9E /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
+		60AF46220E4FED4500E8CA9E /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
+		60B6FC010E4ED919003C0DA5 /* behaviour.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = behaviour.js; sourceTree = "<group>"; };
+		60B6FC020E4ED919003C0DA5 /* editor-index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "editor-index.html"; sourceTree = "<group>"; };
+		60B6FC030E4ED919003C0DA5 /* editor-style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "editor-style.css"; sourceTree = "<group>"; };
+		60BA22C10E4633180097B2CA /* advanced.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = advanced.html; sourceTree = "<group>"; };
+		60BA29960E46A4F10097B2CA /* NSImage+QuickLook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+QuickLook.h"; sourceTree = "<group>"; };
+		60BA29970E46A4F10097B2CA /* NSImage+QuickLook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+QuickLook.m"; sourceTree = "<group>"; };
+		60C85F250E323C06002C80A5 /* ConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionController.h; sourceTree = "<group>"; };
+		60C85F260E323C06002C80A5 /* ConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionController.m; sourceTree = "<group>"; };
+		60C85F3C0E323D88002C80A5 /* TumblrController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrController.h; sourceTree = "<group>"; };
+		60C85F3D0E323D88002C80A5 /* TumblrController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrController.m; sourceTree = "<group>"; };
+		60CD5C870E529538003AE410 /* VideoQTMovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoQTMovieView.h; sourceTree = "<group>"; };
+		60CD5C880E529538003AE410 /* VideoQTMovieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoQTMovieView.m; sourceTree = "<group>"; };
+		60D31EE50E32972400C369A3 /* LinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkController.h; sourceTree = "<group>"; };
+		60D31EE60E32972400C369A3 /* LinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkController.m; sourceTree = "<group>"; };
+		60D31FC80E32A89100C369A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		60D31FDC0E32A9E400C369A3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = /System/Library/Frameworks/QuickLook.framework; sourceTree = "<absolute>"; };
+		60D31FE00E32A9F500C369A3 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		60D320550E32BC1300C369A3 /* ImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageController.h; sourceTree = "<group>"; };
+		60D320560E32BC1300C369A3 /* ImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageController.m; sourceTree = "<group>"; };
+		60D320590E32BFB000C369A3 /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
+		60D3205A0E32BFB000C369A3 /* ApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
+		60D320CC0E32CC2400C369A3 /* QuoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteController.h; sourceTree = "<group>"; };
+		60D320CD0E32CC2400C369A3 /* QuoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteController.m; sourceTree = "<group>"; };
+		60D320E30E32CD6300C369A3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		60DCA0610E3405AE0026B85B /* PostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostController.h; sourceTree = "<group>"; };
+		60DCA0620E3405AE0026B85B /* PostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostController.m; sourceTree = "<group>"; };
+		60E237960E33CFB300917E3A /* ORBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBackgroundView.m; sourceTree = "<group>"; };
+		60E237B10E33D28500917E3A /* ORTiledBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTiledBackgroundView.m; sourceTree = "<group>"; };
+		60E237D60E33D57900917E3A /* TextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextController.h; sourceTree = "<group>"; };
+		60E237D70E33D57900917E3A /* TextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextController.m; sourceTree = "<group>"; };
+		60E237F00E33D5BC00917E3A /* ConversationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationController.h; sourceTree = "<group>"; };
+		60E237F10E33D5BC00917E3A /* ConversationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationController.m; sourceTree = "<group>"; };
+		60E237F30E33D5CA00917E3A /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		60E237F40E33D5CA00917E3A /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
+		60E237FE0E33D94F00917E3A /* WelcomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeController.h; sourceTree = "<group>"; };
+		60E237FF0E33D94F00917E3A /* WelcomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeController.m; sourceTree = "<group>"; };
+		60E2389A0E33EC3900917E3A /* AppKitScripting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKitScripting.framework; path = /System/Library/Frameworks/AppKitScripting.framework; sourceTree = "<absolute>"; };
+		60E238A40E33EC6B00917E3A /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
+		60EF92BA0E33B03C00E37059 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		60EF92BD0E33B04E00E37059 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		60EF93160E33C66C00E37059 /* VideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
+		60EF93170E33C66C00E37059 /* VideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
+		60FAAD720E3B9C4A00ED4D1C /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		60FAAD730E3B9C4B00ED4D1C /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		60FF092B0E7E051B0029036F /* TumblrBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrBGView.h; sourceTree = "<group>"; };
+		60FF092C0E7E051B0029036F /* TumblrBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrBGView.m; sourceTree = "<group>"; };
+		60FF096E0E7E1A570029036F /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Tumblette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B519EB730F6D12FB00FB1730 /* iMediaBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iMediaBrowser.framework; sourceTree = "<group>"; };
+		B519ECBA0F6D4FB400FB1730 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6024E6C60E574527006276FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6024E7CA0E57664A006276FF /* Cocoa.framework in Frameworks */,
+				6024E7CB0E57664A006276FF /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				60377A460E3256EB00D5FF3D /* Security.framework in Frameworks */,
+				60D31FC90E32A89100C369A3 /* QuartzCore.framework in Frameworks */,
+				60D31FDD0E32A9E400C369A3 /* QuickLook.framework in Frameworks */,
+				60D31FE10E32A9F500C369A3 /* Quartz.framework in Frameworks */,
+				60D320E40E32CD6300C369A3 /* WebKit.framework in Frameworks */,
+				60EF92BB0E33B03D00E37059 /* QTKit.framework in Frameworks */,
+				60EF92BE0E33B04E00E37059 /* QuickTime.framework in Frameworks */,
+				60E2389B0E33EC3900917E3A /* AppKitScripting.framework in Frameworks */,
+				60E238A50E33EC6B00917E3A /* AppleScriptKit.framework in Frameworks */,
+				60A57D2C0E87E10800EE1DFB /* Growl-WithInstaller.framework in Frameworks */,
+				6019D4850E8C7403001CC94E /* Sparkle.framework in Frameworks */,
+				6040CBFA0E92F968008E1B28 /* BGHUDAppKit.framework in Frameworks */,
+				B519EB740F6D12FB00FB1730 /* iMediaBrowser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60AF402D0E4F890300E8CA9E /* Wrappers */,
+				60AF402C0E4F88DF00E8CA9E /* Helpers */,
+				6079EC390E381A050053AF22 /* Custom subclasses */,
+				60E237860E33CF3900917E3A /* cosmetics */,
+				60D320540E32BBFE00C369A3 /* View Controllers */,
+				60D320590E32BFB000C369A3 /* ApplicationController.h */,
+				60D3205A0E32BFB000C369A3 /* ApplicationController.m */,
+				608C80ED0E8536B400E15695 /* BlogController.h */,
+				608C80EE0E8536B400E15695 /* BlogController.m */,
+				60C85F250E323C06002C80A5 /* ConnectionController.h */,
+				60C85F260E323C06002C80A5 /* ConnectionController.m */,
+				60A57AB40E87104900EE1DFB /* GrowlController.h */,
+				60A57AB50E87104900EE1DFB /* GrowlController.m */,
+				60DCA0610E3405AE0026B85B /* PostController.h */,
+				60DCA0620E3405AE0026B85B /* PostController.m */,
+				60C85F3C0E323D88002C80A5 /* TumblrController.h */,
+				60C85F3D0E323D88002C80A5 /* TumblrController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B519EB730F6D12FB00FB1730 /* iMediaBrowser.framework */,
+				6040CBF90E92F968008E1B28 /* BGHUDAppKit.framework */,
+				6019D4840E8C7403001CC94E /* Sparkle.framework */,
+				60A57D2B0E87E10800EE1DFB /* Growl-WithInstaller.framework */,
+				60E238A40E33EC6B00917E3A /* AppleScriptKit.framework */,
+				60E2389A0E33EC3900917E3A /* AppKitScripting.framework */,
+				60EF92BD0E33B04E00E37059 /* QuickTime.framework */,
+				60EF92BA0E33B03C00E37059 /* QTKit.framework */,
+				60D320E30E32CD6300C369A3 /* WebKit.framework */,
+				60D31FE00E32A9F500C369A3 /* Quartz.framework */,
+				60D31FDC0E32A9E400C369A3 /* QuickLook.framework */,
+				60D31FC80E32A89100C369A3 /* QuartzCore.framework */,
+				60377A450E3256EB00D5FF3D /* Security.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Tumblette.app */,
+				6024E6C80E574527006276FF /* tumb */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Tumblor */ = {
+			isa = PBXGroup;
+			children = (
+				60377ACF0E3261C700D5FF3D /* todo */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Tumblor;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6024E6D50E574837006276FF /* Tumblr Command-line */,
+				60BA29990E46A4FD0097B2CA /* Image + Quicklook */,
+				60381F420E394AEA005A22AB /* EMKeychain */,
+				32CA4F630368D1EE00C91783 /* Tumblor_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				60381FCD0E395631005A22AB /* Tumblor.sdef */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B519ECBA0F6D4FB400FB1730 /* Icon.icns */,
+				60A579230E86A9A600EE1DFB /* HTML */,
+				60FF096E0E7E1A570029036F /* camera_icon.png */,
+				6024E8530E579BE3006276FF /* photoplaceholder.png */,
+				60A577650E85D12C00EE1DFB /* MMICrashReporter.app */,
+				60A577C80E85D5B900EE1DFB /* MMICrashReporter.crashreporterconfig */,
+				60AF45FB0E4FE6B400E8CA9E /* About Box */,
+				60B6FBC30E4E90BF003C0DA5 /* HTML Editor */,
+				60381F290E394806005A22AB /* Help HTML */,
+				606AA5D20E3689BA00BAEA65 /* Toolbar icons */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				60AF45FF0E4FE78200E8CA9E /* About.xib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6024E6D50E574837006276FF /* Tumblr Command-line */ = {
+			isa = PBXGroup;
+			children = (
+				6024E6CD0E57468C006276FF /* tumb_main.m */,
+			);
+			name = "Tumblr Command-line";
+			sourceTree = "<group>";
+		};
+		60381F290E394806005A22AB /* Help HTML */ = {
+			isa = PBXGroup;
+			children = (
+				6048EA4E0E4600E2009326C6 /* style.css */,
+				60381F360E394822005A22AB /* images */,
+				60381F3E0E394822005A22AB /* welcome.html */,
+				6040CB980E92EEE3008E1B28 /* signedup.html */,
+				60BA22C10E4633180097B2CA /* advanced.html */,
+			);
+			name = "Help HTML";
+			sourceTree = "<group>";
+		};
+		60381F420E394AEA005A22AB /* EMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				60381F4B0E394B1C005A22AB /* EMKeychainItem.h */,
+				60381F4C0E394B1C005A22AB /* EMKeychainItem.m */,
+				60381F4D0E394B1C005A22AB /* EMKeychainProxy.h */,
+				60381F4E0E394B1C005A22AB /* EMKeychainProxy.m */,
+			);
+			name = EMKeychain;
+			sourceTree = "<group>";
+		};
+		606AA5D20E3689BA00BAEA65 /* Toolbar icons */ = {
+			isa = PBXGroup;
+			children = (
+				603F26C00E37F91E008305CD /* chat.pdf */,
+				603F26C10E37F91E008305CD /* link.pdf */,
+				603F26C20E37F91E008305CD /* photo.pdf */,
+				603F26C30E37F91E008305CD /* quotes.pdf */,
+				603F26C40E37F91E008305CD /* sound.pdf */,
+				603F26C50E37F91E008305CD /* text.pdf */,
+				603F26C60E37F91E008305CD /* video.pdf */,
+			);
+			name = "Toolbar icons";
+			sourceTree = "<group>";
+		};
+		6079EC390E381A050053AF22 /* Custom subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				60AF45540E4FD2CC00E8CA9E /* AudioImageView.h */,
+				60AF45550E4FD2CC00E8CA9E /* AudioImageView.m */,
+				60CD5C870E529538003AE410 /* VideoQTMovieView.h */,
+				60CD5C880E529538003AE410 /* VideoQTMovieView.m */,
+				60A57A080E86FE1900EE1DFB /* ImageImagekitView.h */,
+				60A57A090E86FE1900EE1DFB /* ImageImagekitView.m */,
+				60A57B3B0E871DF100EE1DFB /* AboutWindow.h */,
+				60A57B3C0E871DF100EE1DFB /* AboutWindow.m */,
+			);
+			name = "Custom subclasses";
+			sourceTree = "<group>";
+		};
+		60A579230E86A9A600EE1DFB /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				60A579240E86AA1D00EE1DFB /* quote.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
+		60AF402C0E4F88DF00E8CA9E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				60A577570E85CFBF00EE1DFB /* MMICrashReporterBridge.h */,
+				60A577580E85CFBF00EE1DFB /* MMICrashReporterBridge.m */,
+				6079ECCC0E3821A80053AF22 /* NSString_URLEncoding.h */,
+				6079ECCD0E3821A80053AF22 /* NSString_URLEncoding.m */,
+				60AF40290E4F88C100E8CA9E /* TumblrQSHandler.h */,
+				60AF402A0E4F88C100E8CA9E /* TumblrQSHandler.m */,
+				6024E6670E5740DF006276FF /* NSURL_UrlFromFSRef.h */,
+				6024E6680E5740DF006276FF /* NSURL_UrlFromFSRef.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		60AF402D0E4F890300E8CA9E /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				609AD6AF0E4E08200072A4F5 /* ORHTTPWrapper.h */,
+				609AD6B00E4E08200072A4F5 /* ORHTTPWrapper.m */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		60AF45FB0E4FE6B400E8CA9E /* About Box */ = {
+			isa = PBXGroup;
+			children = (
+				60AF461D0E4FECA200E8CA9E /* tumbletteabout.qtz */,
+			);
+			name = "About Box";
+			sourceTree = "<group>";
+		};
+		60B6FBC30E4E90BF003C0DA5 /* HTML Editor */ = {
+			isa = PBXGroup;
+			children = (
+				6024E8200E57992E006276FF /* editor-javascript.js */,
+				60B6FC010E4ED919003C0DA5 /* behaviour.js */,
+				60B6FC020E4ED919003C0DA5 /* editor-index.html */,
+				60B6FC030E4ED919003C0DA5 /* editor-style.css */,
+			);
+			name = "HTML Editor";
+			sourceTree = "<group>";
+		};
+		60BA29990E46A4FD0097B2CA /* Image + Quicklook */ = {
+			isa = PBXGroup;
+			children = (
+				60BA29960E46A4F10097B2CA /* NSImage+QuickLook.h */,
+				60BA29970E46A4F10097B2CA /* NSImage+QuickLook.m */,
+			);
+			name = "Image + Quicklook";
+			sourceTree = "<group>";
+		};
+		60D320540E32BBFE00C369A3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				603F27210E37FF57008305CD /* viewControllerProtocol.h */,
+				60E237D60E33D57900917E3A /* TextController.h */,
+				60E237D70E33D57900917E3A /* TextController.m */,
+				60D31EE50E32972400C369A3 /* LinkController.h */,
+				60D31EE60E32972400C369A3 /* LinkController.m */,
+				60D320550E32BC1300C369A3 /* ImageController.h */,
+				60D320560E32BC1300C369A3 /* ImageController.m */,
+				60D320CC0E32CC2400C369A3 /* QuoteController.h */,
+				60D320CD0E32CC2400C369A3 /* QuoteController.m */,
+				60EF93160E33C66C00E37059 /* VideoController.h */,
+				60EF93170E33C66C00E37059 /* VideoController.m */,
+				60E237F00E33D5BC00917E3A /* ConversationController.h */,
+				60E237F10E33D5BC00917E3A /* ConversationController.m */,
+				60E237FE0E33D94F00917E3A /* WelcomeController.h */,
+				60E237FF0E33D94F00917E3A /* WelcomeController.m */,
+				60E237F30E33D5CA00917E3A /* AudioController.h */,
+				60E237F40E33D5CA00917E3A /* AudioController.m */,
+				60AF46210E4FED4500E8CA9E /* AboutWindowController.h */,
+				60AF46220E4FED4500E8CA9E /* AboutWindowController.m */,
+				60FAAD720E3B9C4A00ED4D1C /* PreferencesController.h */,
+				60FAAD730E3B9C4B00ED4D1C /* PreferencesController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		60E237860E33CF3900917E3A /* cosmetics */ = {
+			isa = PBXGroup;
+			children = (
+				60E237960E33CFB300917E3A /* ORBackgroundView.m */,
+				60E237B10E33D28500917E3A /* ORTiledBackgroundView.m */,
+				609439580E45492500107807 /* ORGradientView.m */,
+				6048EAD20E4610DB009326C6 /* ORViews.h */,
+				60FF092B0E7E051B0029036F /* TumblrBGView.h */,
+				60FF092C0E7E051B0029036F /* TumblrBGView.m */,
+			);
+			name = cosmetics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6024E6C70E574527006276FF /* tumb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6024E6CC0E57454E006276FF /* Build configuration list for PBXNativeTarget "tumb" */;
+			buildPhases = (
+				6024E6C50E574527006276FF /* Sources */,
+				6024E6C60E574527006276FF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tumb;
+			productName = tumb;
+			productReference = 6024E6C80E574527006276FF /* tumb */;
+			productType = "com.apple.product-type.tool";
+		};
+		8D1107260486CEB800E47090 /* Tumblg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Tumblg" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				60381FD10E395747005A22AB /* ShellScript */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				60031CE50E89AFD7004D3514 /* ShellScript */,
+				60031D070E89B19C004D3514 /* CopyFiles */,
+				6040CBF40E92F933008E1B28 /* ShellScript */,
+			);
+			buildRules = (
+				6001C1DB0E6096FF0093A578 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Tumblg;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Tumblor;
+			productReference = 8D1107320486CEB800E47090 /* Tumblette.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tumblg" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Tumblor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Tumblg */,
+				6024E6C70E574527006276FF /* tumb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6024E71F0E575EF9006276FF /* tumb in Resources */,
+				6024E8450E579A6B006276FF /* editor-javascript.js in Resources */,
+				60B6FC1E0E4F433A003C0DA5 /* behaviour.js in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				60377AD00E3261C700D5FF3D /* todo in Resources */,
+				603F26C70E37F91E008305CD /* chat.pdf in Resources */,
+				603F26C80E37F91E008305CD /* link.pdf in Resources */,
+				603F26C90E37F91E008305CD /* photo.pdf in Resources */,
+				603F26CA0E37F91E008305CD /* quotes.pdf in Resources */,
+				603F26CB0E37F91E008305CD /* sound.pdf in Resources */,
+				603F26CC0E37F91E008305CD /* text.pdf in Resources */,
+				603F26CD0E37F91E008305CD /* video.pdf in Resources */,
+				60381F3F0E394822005A22AB /* images in Resources */,
+				60381F400E394822005A22AB /* welcome.html in Resources */,
+				60381FCE0E395631005A22AB /* Tumblor.sdef in Resources */,
+				6048EA4F0E4600E2009326C6 /* style.css in Resources */,
+				60BA22C20E4633180097B2CA /* advanced.html in Resources */,
+				60B6FC060E4ED919003C0DA5 /* editor-index.html in Resources */,
+				60B6FC070E4ED919003C0DA5 /* editor-style.css in Resources */,
+				60AF46000E4FE78200E8CA9E /* About.xib in Resources */,
+				60AF461E0E4FECA200E8CA9E /* tumbletteabout.qtz in Resources */,
+				6024E8540E579BE3006276FF /* photoplaceholder.png in Resources */,
+				60FF096F0E7E1A570029036F /* camera_icon.png in Resources */,
+				60A577660E85D12C00EE1DFB /* MMICrashReporter.app in Resources */,
+				60A577C90E85D5B900EE1DFB /* MMICrashReporter.crashreporterconfig in Resources */,
+				60A579250E86AA1D00EE1DFB /* quote.html in Resources */,
+				6040CB990E92EEE3008E1B28 /* signedup.html in Resources */,
+				B519ECBB0F6D4FB400FB1730 /* Icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60031CE50E89AFD7004D3514 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change /Library/Frameworks/iMediaBrowser.framework/Versions/A/iMediaBrowser @loader_path/../Frameworks/iMediaBrowser.framework/Versions/A/iMediaBrowser  \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"";
+		};
+		60381FD10E395747005A22AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Developer/usr/bin/sdp -f st -o $TARGET_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/Resources $SOURCE_ROOT/Tumblor.sdef\n";
+		};
+		6040CBF40E92F933008E1B28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -fR \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}/Contents/Frameworks/BGHUDAppKit.framework/Versions/Current/Resources\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6024E6C50E574527006276FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6024E6CE0E57468C006276FF /* tumb_main.m in Sources */,
+				6024E77D0E576505006276FF /* TumblrController.m in Sources */,
+				6024E77E0E576575006276FF /* EMKeychainProxy.m in Sources */,
+				6024E77F0E576581006276FF /* EMKeychainItem.m in Sources */,
+				6024E7800E57658B006276FF /* ConnectionController.m in Sources */,
+				6024E7810E576593006276FF /* NSString_URLEncoding.m in Sources */,
+				6024E7820E576597006276FF /* ORHTTPWrapper.m in Sources */,
+				6024E7830E57659C006276FF /* PostController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				60C85F270E323C06002C80A5 /* ConnectionController.m in Sources */,
+				60C85F3E0E323D88002C80A5 /* TumblrController.m in Sources */,
+				60D31EE70E32972400C369A3 /* LinkController.m in Sources */,
+				60D320570E32BC1300C369A3 /* ImageController.m in Sources */,
+				60D3205B0E32BFB000C369A3 /* ApplicationController.m in Sources */,
+				60D320CE0E32CC2400C369A3 /* QuoteController.m in Sources */,
+				60EF93180E33C66C00E37059 /* VideoController.m in Sources */,
+				60E237970E33CFB300917E3A /* ORBackgroundView.m in Sources */,
+				60E237B20E33D28500917E3A /* ORTiledBackgroundView.m in Sources */,
+				60E237D80E33D57900917E3A /* TextController.m in Sources */,
+				60E237F20E33D5BC00917E3A /* ConversationController.m in Sources */,
+				60E237F50E33D5CA00917E3A /* AudioController.m in Sources */,
+				60E238000E33D94F00917E3A /* WelcomeController.m in Sources */,
+				60DCA0630E3405AE0026B85B /* PostController.m in Sources */,
+				6079ECCE0E3821A80053AF22 /* NSString_URLEncoding.m in Sources */,
+				60381F4F0E394B1C005A22AB /* EMKeychainItem.m in Sources */,
+				60381F500E394B1C005A22AB /* EMKeychainProxy.m in Sources */,
+				60FAAD740E3B9C4B00ED4D1C /* PreferencesController.m in Sources */,
+				609439590E45492500107807 /* ORGradientView.m in Sources */,
+				60BA29980E46A4F10097B2CA /* NSImage+QuickLook.m in Sources */,
+				609AD6B10E4E08200072A4F5 /* ORHTTPWrapper.m in Sources */,
+				60AF402B0E4F88C100E8CA9E /* TumblrQSHandler.m in Sources */,
+				60AF45560E4FD2CC00E8CA9E /* AudioImageView.m in Sources */,
+				60AF46230E4FED4500E8CA9E /* AboutWindowController.m in Sources */,
+				60CD5C890E529538003AE410 /* VideoQTMovieView.m in Sources */,
+				6024E6690E5740DF006276FF /* NSURL_UrlFromFSRef.m in Sources */,
+				60FF092D0E7E051B0029036F /* TumblrBGView.m in Sources */,
+				608C80EF0E8536B400E15695 /* BlogController.m in Sources */,
+				60A577590E85CFBF00EE1DFB /* MMICrashReporterBridge.m in Sources */,
+				60A57A0A0E86FE1900EE1DFB /* ImageImagekitView.m in Sources */,
+				60A57AB60E87104900EE1DFB /* GrowlController.m in Sources */,
+				60A57B3D0E871DF100EE1DFB /* AboutWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6024E6CA0E574529006276FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tumblor_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = tumb;
+			};
+			name = Debug;
+		};
+		6024E6CB0E574529006276FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tumblor_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = tumb;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tumblor_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Tumblette;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../3rd-party/imedia/build/Release\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tumblor_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Tumblg;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ENABLE_OPENMP_SUPPORT = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = "Tumblette-beta";
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ENABLE_OPENMP_SUPPORT = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = Tumblg;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6024E6CC0E57454E006276FF /* Build configuration list for PBXNativeTarget "tumb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6024E6CA0E574529006276FF /* Debug */,
+				6024E6CB0E574529006276FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Tumblg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tumblg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

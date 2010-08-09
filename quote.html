@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'  'http://www.w3.org/TR/html4/loose.dtd'> 
+<html> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+ <style type='text/css'> 
+  body{ padding: 0px 12px;  background-color: #EEEEEE; cursor: text;} 
+  #text{ height:auto; font-family: 'Lucida', 'Lucida Grande'; font-size: 18px; color: #475B7F; text-align: center; -webkit-user-modify: read-write-plaintext-only;} 
+  #text:before {  content: '“'; }
+  #text:after { content: '”';}
+  </style>
+  
+  <script type="text/javascript" charset="utf-8">
+  function reset(){    
+    element = document.getElementById('text');
+    if (element.innerHTML == "..."){
+      element.innerHTML = "";
+      element.select;
+    }
+  }
+  document.addEventListener("mousedown", reset, true);
+  </script>
+</head>
+
+<body> 
+  <div id='text'>...</div> 
+</body>
+</html>

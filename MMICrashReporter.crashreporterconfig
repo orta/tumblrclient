@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <key>applicationName</key>
+    <string>Tumblg</string>
+
+    <key>deliveryAddress</key>
+    <string>mailto:orta.therox+bugreport@gmail.com</string>
+
+    <key>modes</key>
+    <dict>
+
+        <key>crash</key>
+        <dict>
+
+            <key>bugReporterIcon</key>
+            <string>Tumblg.icns</string>
+
+            <key>title</key>
+            <string>Tumblg has unexpectedly died.</string>
+
+            <key>subHeading</key>
+            <string>Hopefully you didn't name your computer Romeo.</string>
+
+            <key>introduction</key>
+            <string>Want to help improve future versions of Tumblg? Send your ideas or bug reports</string>
+
+            <key>items</key>
+            <array>
+
+                <dict>
+                    <key>name</key>
+                    <string>UUID</string>
+                    <key>hidden</key>
+                    <true/>
+                    <key>label</key>
+                    <string>UUID:</string>
+                    <key>type</key>
+                    <string>UUID</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>From</string>
+                    <key>label</key>
+                    <string>From:</string>
+                    <key>type</key>
+                    <string>From</string>
+                    <key>description</key>
+                    <string>Your name.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>Email</string>
+                    <key>label</key>
+                    <string>Email Address:</string>
+                    <key>type</key>
+                    <string>EmailAddress</string>
+                    <key>description</key>
+                    <string>Your email address.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>ProblemDescription</string>
+                    <key>label</key>
+                    <string>Problem Description:</string>
+                    <key>type</key>
+                    <string>TextArea</string>
+                    <key>description</key>
+                    <string>Please describe what you were doing when the crash occurred, and anything you think could be related.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>Crash Log</string>
+                    <key>label</key>
+                    <string>log</string>
+                    <key>type</key>
+                    <string>Command</string>
+                    <key>description</key>
+                    <string> </string>
+                    <key>path</key>
+                    <string>/usr/bin/grep</string>
+                    <key>arguments</key>
+                    <array>
+                        <string>"Tumblg"</string>
+                        <string>/private/var/log/system.log</string>
+                    </array>
+                </dict>
+            </array>
+        </dict>
+
+        <key>bug</key>
+        <dict>
+
+            <key>bugReporterIcon</key>
+            <string>Tumblg.icns</string>
+
+            <key>title</key>
+            <string>Submit a Tumblg Bug Report.</string>
+
+            <key>subHeading</key>
+            <string></string>
+
+            <key>introduction</key>
+            <string>Want to help improve future versions of Tumblg? Send your ideas or bug reports</string>
+
+            <key>items</key>
+            <array>
+
+                <dict>
+                    <key>name</key>
+                    <string>UUID</string>
+                    <key>label</key>
+                    <string>UUID:</string>
+                    <key>hidden</key>
+                    <true/>
+                    <key>type</key>
+                    <string>UUID</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>Summary</string>
+                    <key>label</key>
+                    <string>Summary:</string>
+                    <key>type</key>
+                    <string>TextField</string>
+                    <key>description</key>
+                    <string>Please enter a one line summary of your problem here.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>From</string>
+                    <key>label</key>
+                    <string>From:</string>
+                    <key>type</key>
+                    <string>From</string>
+                    <key>description</key>
+                    <string>Your name.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>Email</string>
+                    <key>label</key>
+                    <string>Email Address:</string>
+                    <key>type</key>
+                    <string>EmailAddress</string>
+                    <key>description</key>
+                    <string>Your email address.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>Severity</string>
+                    <key>label</key>
+                    <string>Importance:</string>
+                    <key>type</key>
+                    <string>Select</string>
+                    <key>description</key>
+                    <string>Please indicate the severity of the bug. Major indicates a crash, data loss or serious problem. Minor indicates something that doesn't interfere with main functionality, but is still a bug. Trivial indicates a minor annoyance.</string>
+                    <key>options</key>
+                    <array>
+                        <string>Interesting</string>
+                        <string>Mind-blowing</string>
+                        <string>Trivial</string>
+                    </array>
+                    <key>selected</key>
+                    <string>Interesting</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>ProblemDescription</string>
+                    <key>label</key>
+                    <string>Problem Description:</string>
+                    <key>type</key>
+                    <string>TextArea</string>
+                    <key>description</key>
+                    <string>Please describe the problem, and the steps to reproduce it if possible.</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</dict>
+</plist>

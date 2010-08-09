@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- 
+      *  This the default crashreporterconfig for MMICrashReporter 
+      *  It does not have entries for the icon, applicationName, or 
+      *  delivery address.
+      * 
+      * The configurations in the mode dictionary here will be used for 
+      * the bug and crash dictionaries if none are provided.
+     -->
+
+    <key>modes</key>
+    <dict>
+
+        <key>crash</key>
+        <dict>
+
+<!--
+            <key>bugReporterIcon</key>
+            <string>MySync.icns</string>
+-->
+
+            <key>title</key>
+            <string>The application "%@" has unexpectedly quit.</string>
+
+            <key>subHeading</key>
+            <string>The system and other applications have not been affected.</string>
+
+            <key>introduction</key>
+            <string>To help improve future versions of this software, would you like to submit a bug report to the developers?</string>
+
+            <key>items</key>
+            <array>
+
+                <dict>
+                    <key>name</key>
+                    <string>UUID</string>
+                    <key>hidden</key>
+                    <true/>
+                    <key>type</key>
+                    <string>UUID</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>From</string>
+                    <key>label</key>
+                    <string>From:</string>
+                    <key>type</key>
+                    <string>From</string>
+                    <key>description</key>
+                    <string>Your name. Leave this blank if you wish.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>Email</string>
+                    <key>label</key>
+                    <string>Email Address:</string>
+                    <key>type</key>
+                    <string>EmailAddress</string>
+                    <key>description</key>
+                    <string>Your email address. Leave this blank if you wish.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>ProblemDescription</string>
+                    <key>label</key>
+                    <string>Problem Description:</string>
+                    <key>type</key>
+                    <string>TextArea</string>
+                    <key>description</key>
+                    <string>Please describe what you were doing when the crash occurred, and any other related information.</string>
+                </dict>
+
+                <dict>
+                    <key>height</key>
+                    <real>100</real>
+                    <key>fixedHeight</key>
+                    <true/>
+                    <key>readOnly</key>
+                    <true/>
+                    <key>name</key>
+                    <string>CrashLog</string>
+                    <key>label</key>
+                    <string>Crash Log:</string>
+                    <key>type</key>
+                    <string>CrashLog</string>
+                    <key>description</key>
+                    <string>The system crash log for your application.</string>
+                </dict>
+
+            </array>
+        </dict>
+
+        <key>bug</key>
+        <dict>
+
+<!--
+            <key>bugReporterIcon</key>
+            <string>MySync.icns</string>
+-->
+
+            <key>title</key>
+            <string>Submit a %@ Bug Report.</string>
+
+            <key>subHeading</key>
+            <string></string>
+
+            <key>introduction</key>
+            <string>To help improve future versions of this software, would you like to submit a bug report to the developers?</string>
+
+            <key>items</key>
+            <array>
+
+                <dict>
+                    <key>name</key>
+                    <string>UUID</string>
+                    <key>label</key>
+                    <string>UUID:</string>
+                    <key>hidden</key>
+                    <true/>
+                    <key>type</key>
+                    <string>UUID</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>From</string>
+                    <key>label</key>
+                    <string>From:</string>
+                    <key>type</key>
+                    <string>From</string>
+                    <key>description</key>
+                    <string>Your name. Leave this blank if you wish.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>Email</string>
+                    <key>label</key>
+                    <string>Email Address:</string>
+                    <key>type</key>
+                    <string>EmailAddress</string>
+                    <key>description</key>
+                    <string>Your email address. Leave this blank if you wish.</string>
+                </dict>
+
+                <dict>
+                    <key>name</key>
+                    <string>ProblemDescription</string>
+                    <key>label</key>
+                    <string>Problem Description:</string>
+                    <key>type</key>
+                    <string>TextArea</string>
+                    <key>description</key>
+                    <string>Please describe the problem, and the steps to reproduce it if possible.</string>
+                </dict>
+
+            </array>
+        </dict>
+
+    </dict>
+</dict>
+</plist>

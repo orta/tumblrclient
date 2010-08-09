@@ -1,0 +1,71 @@
+
+#navigation{
+  -webkit-user-select: none; 
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 5px;
+  width: auto;
+  display: block;
+  margin-top:-10px;
+  height: 18px;
+  -webkit-border-bottom-left-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(162, 177, 207)), to(rgb(120, 138, 177)));
+  
+}
+#navigation li{
+  display: inline;
+  text-shadow: rgba(0,0,0,0.5) 0px 1px 1px;  
+}
+#navigation li a{
+  cursor: default;
+}
+
+#HTMLorText{
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;
+  -webkit-user-select: none; 
+  cursor: default;
+  position: absolute;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  -webkit-border-radius: 4px;
+  top:3px;
+  left: 20px;
+  padding: 0px 10px;  
+  border-top: 1px solid rgb(145, 160, 192);
+}
+#HTMLorText:hover{
+  background-color: rgba(0,0,0,0.65);
+}
+
+#errors{
+  -webkit-user-select: none; 
+  cursor: default;
+  background-color: #bb1122;
+  border: 4px solid #bbb;
+  text-shadow: rgba(0,0,0,0.5) 0px 1px 1px;  
+  color: white;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, .2) 0px 3px 4px;
+  
+}
+#editableContent{
+  -webkit-user-modify: read-write-plaintext-only;
+  outline: none;
+
+}
+
+.htmlmode{
+  font-family: Monaco, Lucida Console, monospace;
+  color: #333;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: pre;
+  word-wrap: break-word;   
+}
+
+.keyword { color: #8b0053 }
+.string { color: #a00000 }
+.number { color: #2900ff }
+.comment { color: #007215 }

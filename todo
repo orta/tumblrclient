@@ -1,0 +1,91 @@
+- Tabbing is a major issue in everything. Read up on responder chain, a lot.
+- add code for make defaults button
+  
+=======
+crashes
+=======
+
+-------
+bugz
+
+- loading link from Tumblg bookmarklet
+- can see other tabs when resizing
+- the 
+-------
+
+For a 1.0 release:
+  - Login / Auth
+    - Auths x
+    - Fails Elegantly x
+  - Text 
+    - supports editing html x
+    - works x
+  - Link
+    - supports get from safari x
+    - works x
+  - Image
+    - supports IKImage Editing x
+    - supports grabbing from camera x
+    - supports grabbing from iphoto  x
+    - supports DnD x
+    - works x
+  - Quote
+    - works x
+  - Video
+  Tumblg[3221] httpReq succeded with string = Not logged into Vimeo. 01/10/2008 18:12:45 
+    - supports grab from isight x
+    - supports grab from imovie x
+    - supports iPhoto? (makes sense to me) x
+    - works x
+  - Conversation
+    - works x
+  - Audio
+    - supports iTunes x  
+    - supports Garage band x
+    - supports Mic input >
+    - works x
+  - Welcome
+    - full explaination x
+    - links to my blog x
+    - a follow me button! x
+    - a register button x
+  - Style
+    - Needs a consistant style x
+    - Icon and name finalized >
+    - Tabbing works logically >
+    - Clicking on the pic takes you to the blog
+    - Blog has Adium style rond corners
+  - Importage
+    - new post menu item x
+    - open file menu item 
+    - supports applescript x
+      - supports text inputs x
+      - supports filepath inputs x
+        - can tell which type automatically x
+      - supports sending from applescript >
+    - Quicksilver script
+    - support dragging from dock x
+  - Need to 
+      - watch people use the app and see how they react to it/ use it
+      
+  - Dev Blog username
+    ben.maslen@googlemail.com - password =)
+    
+    Make a HTML/Simple text editor
+    Easy registration for Tumblr x
+    More example applescripts
+    Bring back the animations
+    Convert audio to MP3 before uploading
+    Checking filespace limits
+    Double-clicking on files in views *doesn't* select  - serious issue
+    More artwork is on the way
+    Growl Support x
+    Sparkle Support x
+    
+For 1.2?
+  Silent Post methods
+  One Line actionscripts
+  Adium to conversation script
+  supports rich text
+  chat has inline styling 
+  quiet posting 

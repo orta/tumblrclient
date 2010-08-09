@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- 
+       *
+       * This is the dictionary of error messages. It is keyed on
+       * domains, and within domains, on error code.
+       *
+       * You should define these in a header somewhere, and reference
+       * those instead of the raw numbers.
+       *
+       * If you are really smart, you'll get this file preprocessed
+       * with that header, to save you having to keep this one
+       * and that one in sync ...
+       *
+       *
+       * Each leaf entry is a dictionary containing the following entries:
+       * 
+       * string: A symbolic string describing the error.
+       *
+       *  title: The title to use for the error.
+       *  format: The format to use for the error description.
+       *          It is up to the caller to ensure that the correct
+       *          number of arguments is supplied when constructing
+       *          an error.
+       *  help: The help anchor for this error. This is *not* required.
+     -->
+
+  <key>com.mildmanneredindustries.MMICrashReporter</key>
+  <dict>
+
+    <key>-10002</key>
+    <dict>
+      <key>string</key>
+      <string>MMI_ERR_CORRUPT_CONFIG</string>
+      <key>title</key>
+      <string>The Configuration File was Unreadable or Corrupt</string>
+      <key>format</key>
+      <string>The configuration file could not be read or parsed because:
+
+%@</string>
+<!--
+      <key>help</key>
+      <string>SomeError</string>
+-->
+      <key>priority</key>
+      <real>0.0</real>
+    </dict>
+
+    <key>-10003</key>
+    <dict>
+      <key>string</key>
+      <string>MMI_ERR_NOT_BEING_RUN_FROM_BUNDLE</string>
+      <key>title</key>
+      <string>Fatal Error</string>
+      <key>format</key>
+      <string>MMICrashReporter is not being run from a Bundle.</string>
+      <key>priority</key>
+      <real>0.0</real>
+    </dict>
+
+    <key>-10004</key>
+    <dict>
+      <key>string</key>
+      <string>MMI_ERR_NO_DELIVERY_AGENT_FOR_SCHEME</string>
+      <key>title</key>
+      <string>DeliveryAgent Not Found</string>
+      <key>format</key>
+      <string>No DeliveryAgent PlugIn could be found for the %@ scheme.</string>
+      <key>priority</key>
+      <real>0.0</real>
+    </dict>
+
+  </dict>
+
+</dict>
+</plist>
